@@ -1,0 +1,12 @@
+services:
+  multiagent-rag:
+    build: .
+    container_name: multiagent_rag_app
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python main.py
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    env_file:
+      - .env

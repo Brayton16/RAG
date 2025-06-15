@@ -1,0 +1,11 @@
+langchain
+langgraph
+openai
+chromadb
+faiss-cpu
+polars
+numpy
+matplotlib
+scikit-learn
+python-dotenv
+tqdm
