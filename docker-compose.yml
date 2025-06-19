@@ -5,8 +5,11 @@ services:
     volumes:
       - .:/app
     working_dir: /app
-    command: python main.py
+    command: >
+      jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.disable_check_xsrf=True --no-browser
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
     env_file:
       - .env
+    ports:
+      - "8888:8888"

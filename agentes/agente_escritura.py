@@ -1,0 +1,72 @@
+from langchain.schema.runnable import RunnableMap
+from langchain_openai import ChatOpenAI
+from langchain.prompts import ChatPromptTemplate
+from vector_storage.retriever import load_retriever
+from typing import TypedDict, Optional, List
+
+class GraphState(TypedDict):
+    prompt: str
+    result: Optional[str]
+    __next__: Optional[str]
+    __queue__: List[str]
+
+
+def agente_escritura_node(state: GraphState) -> GraphState:
+    # prompt = state["prompt"]
+
+    # generated_text = f"""
+    # Esta es una introducción generada automáticamente a partir del siguiente prompt:
+    # "{prompt[:100]}..."
+
+    # La inteligencia artificial ha transformado radicalmente la forma en que se realiza la investigación académica.
+    # """
+    # return {
+    #     "result": generated_text.strip()
+    # }
+    # Simulación de generación de texto
+    print("Generando texto a partir del prompt...")
+    return state
+
+def nodo_escritura(state: GraphState) -> GraphState:
+    print("🟩 Nodo ESCRITURA ejecutado")
+
+    retriever = load_retriever()
+    if not retriever:
+        print("⚠️ No se pudo cargar el recuperador de documentos.")
+        state["result"] = (state.get("result", "") or "") + "\n[Error: No se pudo cargar el retriever]"
+        state["__next__"] = state["__queue__"].pop(0) if state.get("__queue__") else None
+        return state
+
+    docs = retriever.invoke(state["prompt"])
+    if not docs:
+        print("⚠️ No se encontraron documentos relevantes.")
+        state["result"] = (state.get("result", "") or "") + "\n[Error: No se encontraron documentos relevantes]"
+        state["__next__"] = state["__queue__"].pop(0) if state.get("__queue__") else None
+        return state
+
+    # Preparar el LLM y prompt
+    llm = ChatOpenAI(
+        model="gpt-4",
+        temperature=0.7, 
+        max_tokens=1000,
+        top_p=0.9,
+        frequency_penalty=0.3,
+        presence_penalty=0.4
+        
+    )
+
+    prompt = ChatPromptTemplate.from_template(
+        "Eres un asistente de investigación. Con base en el siguiente contexto:\n\n{context}\n\nRedacta un párrafo académico relacionado con el contexto anterior"
+    )
+
+    # Runnable chain moderno
+    chain = RunnableMap({
+        "context": lambda _: "\n\n".join([doc.page_content for doc in docs]),
+    }) | prompt | llm
+
+    respuesta = chain.invoke({"prompt": state["prompt"]})
+
+    state["result"] = (state.get("result", "") or "") + "\n🟩 Introducción generada:\n" + respuesta.content
+    state["__next__"] = state["__queue__"].pop(0) if state.get("__queue__") else None
+    return state
+
