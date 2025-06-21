@@ -56,7 +56,14 @@ def nodo_escritura(state: GraphState) -> GraphState:
     )
 
     prompt = ChatPromptTemplate.from_template(
-        "Eres un asistente de investigación. Con base en el siguiente contexto:\n\n{context}\n\nRedacta un párrafo académico relacionado con el contexto anterior"
+    "Actúa como un asistente de investigación con experiencia en redacción académica en español. "
+    "Utiliza el siguiente contexto extraído de fuentes académicas:\n\n{context}\n\n"
+    "Con base en este contenido:\n"
+    "1. Escribe una introducción académica clara, formal y concisa (150 a 200 palabras).\n"
+    "2. Utiliza voz en tercera persona y evita expresiones subjetivas.\n"
+    "3. Integra al menos una cita textual entre comillas, referenciada al final con el formato (Apellido, año).\n"
+    "4. Finaliza con una oración de cierre que indique la estructura del texto completo.\n"
+    "No inventes información. Si no hay suficiente contexto, indícalo explícitamente."
     )
 
     # Runnable chain moderno

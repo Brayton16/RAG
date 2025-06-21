@@ -54,9 +54,18 @@ def nodo_referencias(state: GraphState) -> GraphState:
         presence_penalty=0.4
     )
 
-    prompt_template = ChatPromptTemplate.from_template(
-        "Eres un asistente de investigación. A partir del siguiente contenido académico:\n\n{context}\n\n"
-        "Genera referencias en formato IEEE y APA 7 relacionadas con el tema tratado."
+    prompt = ChatPromptTemplate.from_template(
+        "Actúas como un asistente académico especializado en generación de referencias bibliográficas. "
+        "A partir del siguiente contenido académico:\n\n{context}\n\n"
+        "Genera referencias **reales o plausibles** directamente relacionadas con el texto anterior, en los siguientes formatos:\n"
+        "• IEEE (mínimo 2 entradas)\n"
+        "• APA 7 (mínimo 2 entradas)\n\n"
+        "Requisitos:\n"
+        "1. No repitas autores ni títulos.\n"
+        "2. Si se menciona un autor, obra o publicación en el texto, intenta incluirla en las referencias.\n"
+        "3. Evita referencias inventadas que suenen falsas. Si necesitas simularlas, hazlo de forma verosímil.\n"
+        "4. Ordena cada lista alfabéticamente.\n"
+        "5. Devuelve primero las referencias IEEE, luego las APA 7, con un encabezado claro para cada sección."
     )
 
     chain = RunnableMap({

@@ -54,7 +54,14 @@ def nodo_resumen(state: GraphState) -> GraphState:
     )
 
     prompt = ChatPromptTemplate.from_template(
-        "Eres un asistente de investigación. Resume el siguiente contenido académico en español:\n\n{context}"
+        "Eres un asistente de investigación encargado de resumir literatura académica en español. "
+        "A continuación se presenta el contenido a resumir:\n\n{context}\n\n"
+        "Tu tarea es:\n"
+        "1. Redactar un resumen analítico de máximo 120 palabras.\n"
+        "2. Incluir los siguientes elementos: objetivo del texto, metodología empleada y hallazgos principales.\n"
+        "3. Usar lenguaje formal y evitar repeticiones o juicios de valor.\n"
+        "4. Redactar en tercera persona y mantener coherencia lógica.\n"
+        "Si el contenido no permite identificar estos elementos, ofrece el mejor resumen posible basado en lo disponible."
     )
 
     chain = RunnableMap({
