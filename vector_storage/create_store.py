@@ -36,7 +36,7 @@ def build_vector_store():
             total_docs += len(split_docs)
 
     if not all_split_docs:
-        raise ValueError("No documents found or no content to split.")
+        raise ValueError("Documentos no encontrados o no se pudieron dividir.")
 
     vector_store = FAISS.from_documents(all_split_docs, embeddings)
     vector_store.save_local(OUTPUT_DIR)

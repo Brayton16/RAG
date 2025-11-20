@@ -70,7 +70,7 @@ def nodo_referencias(state: GraphState) -> GraphState:
 
     chain = RunnableMap({
         "context": lambda _: "\n\n".join(doc.page_content for doc in docs)
-    }) | prompt_template | llm
+    }) | prompt | llm
 
     respuesta = chain.invoke({"prompt": state["prompt"]})
     texto = respuesta.content.strip()

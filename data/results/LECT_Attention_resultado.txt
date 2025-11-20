@@ -1,0 +1,34 @@
+
+🔹 Resumen:
+Este trabajo propone una nueva arquitectura de red neuronal llamada Transformer, 
+que se basa únicamente en mecanismos de atención, eliminando la recurrencia y las convoluciones. 
+Los experimentos en dos tareas de traducción automática demuestran que estos modelos son superiores en calidad, 
+más paralelizables y requieren significativamente menos tiempo para entrenarse. 
+El modelo alcanza un BLEU de 28.4 en la tarea de traducción inglés-alemán WMT 2014, mejorando los mejores resultados 
+existentes en más de 2 BLEU. En la tarea de traducción inglés-francés WMT 2014, 
+el modelo establece un nuevo récord con un BLEU de 41.8 después de entrenarse durante 3.5 días en ocho GPUs.
+
+🟡 Referencias:
+**Referencias IEEE**
+
+[1] A. N. Gomez, L. Kaiser, and I. Polosukhin, "Attention Is All You Need," Google Brain, 2017.
+[2] J. Uszkoreit, L. Jones, and N. Shazeer, "The Transformer: A Novel Network Architecture Based on Attention Mechanisms," Google Research, 2017.
+[3] M. P. Marcus, M. A. Marcinkiewicz, and B. Santorini, "Building a large annotated corpus of English: The Penn Treebank," Computational Linguistics, vol. 19, no. 2, pp. 313-330, 1993.
+[4] Y. Wu et al., "Google’s Neural Machine Translation System: Bridging the Gap Between Human and Machine Translation," arXiv preprint arXiv:1609.08144, 2016.
+
+**Referencias APA 7**
+Gomez, A.N., Kaiser, L., & Polosukhin, I. (2017). Attention Is All You Need. Google Brain.
+Uszkoreit, J., Jones, L., & Shazeer, N. (2017). The Transformer: A Novel Network Architecture Based on Attention Mechanisms. Google Research.
+Marcus, M.P., Marcinkiewicz, M.A., & Santorini B.(1993). Building a Large Annotated Corpus of English: The Penn Treebank. Computational Linguistics, 19(2), 313-330.
+Wu,Y., Schuster,M., Chen,Z., Le,Q.V., Norouzi,M., Macherey,W., Krikun,M., Cao,Y., Gao,Q., Macherey,K...& others.(2016). Google’s Neural Machine Translation System: Bridging the Gap Between Human and Machine Translation.arXiv preprint arXiv:1609.08144.
+
+🟩 Introducción generada:
+Este trabajo académico se centra en la propuesta de una nueva arquitectura de red llamada Transformer, 
+diseñada por Vaswani et al. (2017). El Transformer se basa únicamente en mecanismos de atención, 
+prescindiendo completamente de las redes neuronales recurrentes y convolucionales que dominan los modelos 
+actuales de transducción de secuencias. Según los autores, esta arquitectura permite una paralelización 
+significativamente mayor y logra un nuevo estado del arte en la calidad de la traducción tras ser entrenada 
+durante tan solo doce horas en ocho GPUs P100. Además, el estudio muestra que el Transformer generaliza bien a 
+otras tareas al aplicarlo con éxito al análisis sintáctico de constituyentes en inglés tanto con grandes como con 
+limitados datos de entrenamiento. El texto completo detallará el diseño y funcionamiento del Transformer, 
+su rendimiento comparado con otros modelos existentes y sus posibles aplicaciones futuras.
