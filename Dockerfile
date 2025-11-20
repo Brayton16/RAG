@@ -10,12 +10,12 @@ RUN apt-get update && apt-get upgrade -y && \
     libssl-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-
 WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install notebook
 
 COPY . .
 
-CMD ["python", "main.py"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--NotebookApp.token=", "--NotebookApp.password=", "--NotebookApp.disable_check_xsrf=True", "--no-browser"]

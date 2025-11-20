@@ -1,0 +1,8 @@
+{
+    "dependencies": [
+        "./requirements.txt"
+    ],
+    "graphs": {
+        "XD": "main.py:workflow"
+    }
+}

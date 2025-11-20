@@ -1,0 +1,23 @@
+
+🔹 Resumen:
+Este documento es una guía definitiva para Scrum, desarrollada por Ken Schwaber y Jeff Sutherland. Explica que Scrum se basa en la transparencia, inspección y adaptación. Se deben inspeccionar frecuentemente los artefactos de Scrum y el progreso hacia un objetivo de Sprint para detectar variaciones indeseables. Si se determina que algún aspecto del proceso se desvía fuera de los límites aceptables, debe realizarse un ajuste lo más pronto posible.
+
+El equipo de Scrum se compone de un propietario del producto, el equipo de desarrollo y un maestro de Scrum. Los equipos son autorganizados y multifuncionales, eligiendo la mejor manera de realizar su trabajo sin depender de otros ajenos al equipo.
+
+Scrum prescribe cuatro eventos formales para la inspección y adaptación: Planificación del Sprint, Scrum diario, Revisión del Sprint y Retrospectiva del Sprint. Durante cada Retrospectiva del Sprint, el equipo planifica formas de aumentar la calidad del producto adaptando la definición de "Hecho" según corresponda.
+
+Los artefactos de Scrum representan trabajo o valor para proporcionar transparencia y oportunidades para la inspección y adaptación. Estos incluyen el Backlog del Producto, el Backlog del Sprint y el Incremento.
+
+La guía también explica cómo se realiza la planificación del Sprint, cómo se lleva a cabo el Scrum diario y cómo se revisa y realiza la retrospectiva del Sprint. Enfatiza que las decisiones sobre el sistema se basan en la observación del estado percibido de los artefactos y que cualquier mejora debe implementarse en el próximo Sprint.
+🟩 Introducción generada:
+El método Scrum, desarrollado y mantenido por Ken Schwaber y Jeff Sutherland, es una metodología ágil para la gestión de proyectos que se basa en la adaptación, inspección y transparencia. Dentro del marco de Scrum, se prescriben cuatro eventos formales para la inspección y adaptación: planificación de sprint, scrum diario, revisión de sprint y retrospectiva de sprint. El equipo Scrum es autorganizado y multifuncional, compuesto por un dueño del producto, el equipo de desarrollo y un Scrum Master. Estos equipos tienen todas las competencias necesarias para realizar el trabajo sin depender de otros fuera del equipo. La transparencia es fundamental en este proceso, ya que permite a todos los involucrados compartir una comprensión común de lo que se está viendo. Además, se espera que los usuarios de Scrum inspeccionen frecuentemente los artefactos y progresos de Scrum para detectar variaciones no deseadas. Si se determina que algún aspecto del proceso se desvía más allá de los límites aceptables, debe ajustarse lo antes posible para minimizar cualquier desviación adicional. Este enfoque proporciona oportunidades para la inspección y adaptación continuas, mejorando así la eficacia general del proceso de desarrollo.
+🟡 Referencias:
+Referencias en formato IEEE:
+
+[1] K. Schwaber y J. Sutherland, "The Scrum Guide™: The Definitive Guide to Scrum: The Rules of the Game," 2013.
+[2] K. Schwaber y J. Sutherland, "Scrum Theory and the Scrum Team," en The Scrum Guide™, 2013, pp. 3-5.
+[3] K. Schwaber y J. Sutherland, "Scrum Events and Artifacts," en The Scrum Guide™, 2013, pp. 7-14.
+Referencias en formato APA 7:
+Schwaber, K., & Sutherland, J. (2013). The Scrum Guide™: The Definitive Guide to Scrum: The Rules of the Game.
+Schwaber, K., & Sutherland, J. (2013). Scrum Theory and the Scrum Team. En The Scrum Guide™ (pp. 3-5).
+Schwaber, K., & Sutherland, J. (2013). Scrum Events and Artifacts. En The Scrum Guide™ (pp. 7-14).

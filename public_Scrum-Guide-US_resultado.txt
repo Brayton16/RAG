@@ -1,0 +1,23 @@
+
+🔹 Resumen:
+El documento es una guía sobre Scrum, una metodología de desarrollo de software. El equipo de Scrum consta de un Propietario del Producto, el Equipo de Desarrollo y un Scrum Master. Los equipos son autoorganizados y multifuncionales, eligiendo la mejor manera de realizar su trabajo sin depender de otros fuera del equipo. 
+
+Scrum prescribe cuatro eventos formales para la inspección y adaptación: Planificación del Sprint, Scrum Diario, Revisión del Sprint y Retrospectiva del Sprint. La transparencia es esencial en este proceso, requiriendo un lenguaje común entre todos los participantes y una definición compartida de "Hecho".
+
+Si se determina que uno o más aspectos de un proceso se desvían fuera de los límites aceptables, el proceso o el material procesado debe ajustarse lo más pronto posible para minimizar la desviación adicional.
+
+La guía también describe varios artefactos de Scrum como el Backlog del Producto, el Backlog del Sprint y el Incremento, todos diseñados para proporcionar transparencia y oportunidades para la inspección y adaptación. 
+
+La Revisión del Sprint es un evento en el que se invita a los stakeholders clave a dar retroalimentación y fomentar la colaboración. Al final de cada Retrospectiva del Sprint, el equipo debería haber identificado mejoras a implementar en el próximo Sprint.
+🟩 Introducción generada:
+El Scrum es un marco de trabajo que permite a los equipos abordar problemas complejos adaptativos, al tiempo que entrega de manera eficaz y creativa productos de mayor valor posible. Este marco se basa en la teoría del empirismo, donde el conocimiento proviene de la experiencia y la toma de decisiones se basa en lo que se conoce. Dentro del Scrum, existen roles clave como el Product Owner, el equipo de desarrollo y el Scrum Master. Además, se realizan eventos formales para inspección y adaptación, como la planificación del Sprint, el Scrum diario, la revisión del Sprint y la retrospectiva del Sprint. Los equipos de Scrum son autoorganizados y multifuncionales, lo que significa que tienen las competencias necesarias para realizar su trabajo sin depender de otras personas fuera del equipo.
+🟡 Referencias:
+Referencias en formato IEEE:
+
+[1] K. Schwaber y J. Sutherland, "The Scrum Guide™: The Definitive Guide to Scrum: The Rules of the Game", 2013.
+[2] K. Schwaber y J. Sutherland, "Scrum Theory and the Scrum Team", en The Scrum Guide™, 2013, pp. 3-5.
+[3] K. Schwaber y J. Sutherland, "Scrum Events and Artifacts", en The Scrum Guide™, 2013, pp. 7-14.
+Referencias en formato APA 7:
+Schwaber, K., & Sutherland, J. (2013). The Scrum Guide™: The Definitive Guide to Scrum: The Rules of the Game.
+Schwaber, K., & Sutherland, J. (2013). Scrum Theory and the Scrum Team. En The Scrum Guide™ (pp. 3-5).
+Schwaber, K., & Sutherland, J. (2013). Scrum Events and Artifacts. En The Scrum Guide™ (pp. 7-14).
